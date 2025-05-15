@@ -1,0 +1,31 @@
+
+/* App.css */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Smooth transitions for dark mode */
+.App.dark-mode .recipe-card,
+.App.dark-mode input,
+.App.dark-mode textarea,
+.App.dark-mode select,
+.App.dark-mode button {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,66 @@
+/* RecipeList.css */
+.recipe-card {
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.App.dark-mode .recipe-card {
+  background: #333;
+  border-color: #444;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rest of your RecipeCard styles... */
+
+#view-recipes {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.App.dark-mode #view-recipes {
+  background: #2a2a2a;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* If you prefer flexbox instead of grid */
+/* .recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+} */
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.no-recipes {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.App.dark-mode .no-recipes {
+  color: #aaa;
+}
